@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/paginaLineas.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter";
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      $(document).ready(() => {
+        //Load the HTML contents of the header into <header>
+        $("header").load("./header.html");
+        $("footer").load("./footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <main>
+      <header style="grid-row: 1; height: 50px"></header>
+      <div class="buttonList">
+        <button class="buttonLinea">100</button>
+        <button class="buttonLinea">200</button>
+        <button class="buttonLinea" style="background-color: white;">300</button>
+        <button class="buttonLinea">400</button>
+        <button class="buttonLinea">500</button>
+      </div>
+      <div class="lineas">
+        <section class="linea">Linea 301 Port de Pollença - Palma</section>
+        <section class="linea">Linea 302 Platja de Muro - Palma</section>
+        <section class="linea">Linea 303 Hospital Joan March - Palma</section>
+        <section class="linea">Linea 304 Plaza España - Palma</section>
+        <section class="linea">Linea 305 Poligono de Levante - Palma</section>
+      </div>
+      <footer style="grid-row: 6; height: 50px"></footer>
+      <div class="paradas">
+        <div class="title">
+            Paradas
+            <img src="./images/reloj.png" class="logo"/>
+          </div>
+          <section class="contenedor">
+              <div style="display: flex; flex-direction:column; max-width:30%">
+                <button class="buttonLinea">Port Pollença</button>
+                <button class="buttonLinea">Platja de Muro</button>
+                <button class="buttonLinea" style="background-color: white;">Hospital Joan March</button>
+                <button class="buttonLinea">Plaza España</button>
+                <button class="buttonLinea">Poligono de Levante</button>
+              </div>
+          <div class="listaParadas">
+            <section class="linea">06 -> 15 mins</section>
+            <section class="linea">19 -> 59 mins</section>
+            <section class="linea">28 -> 1h 15 mins</section>
+            <section class="linea">03 -> 10 mins</section>
+          </div>
+        </section>
+      </div>
+      <div style="display: flex; align-items:center; justify-content: center">
+        <button class="buttonLinea" style="background-color: white;">Lista</button>
+        <button class="buttonLinea">Mapa</button>
+      </div>
+    </main>
+  </body>
+</html>

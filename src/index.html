@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter";
+      }
+    </style>
+    <title>TIB</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      $(document).ready(() => {
+        //Load the HTML contents of the header into <header>
+        $("footer").load("./footer.html");
+        $("header").load("./header.html");
+      });
+    </script>
+  </head>
+  <body>
+    <main class="main">
+      <header style="grid-row: 1; height: 50px"></header>
+      <div class="cardHorarios" style="grid-row: 2">
+        <span class="cardTextHorarios">Horarios de parada</span>
+        <input type="text" />
+      </div>
+      <a href="./lineas.html">
+        <div class="card">
+          <span class="cardText">Líneas</span>
+          <img src="./images/lineas.png" class="logo" />
+        </div>
+      </a>
+      <a href="./areaPersonalLogin.html">
+        <div class="card">
+          <span class="cardText">Area personal</span>
+          <img src="./images/areapersonal.png" class="logo" />
+        </div>
+      </a>
+      <a href="./mapa.html">
+        <div class="card">
+          <span class="cardText">Mapa</span>
+          <img src="./images/mapa.png" class="logo" />
+        </div>
+      </a>
+      <a href="./noticias_alertas.html">
+        <div class="card">
+          <span class="cardText">Noticias alertas</span>
+          <img src="./images/alerta.png" class="logo" />
+        </div>
+      </a>
+
+      <footer style="grid-row: 7; height: 50px"></footer>
+    </main>
+  </body>
+</html>

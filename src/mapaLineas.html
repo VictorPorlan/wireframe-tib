@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/mapaLineas.css" />
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <style>
+      body {
+          font-family: 'Inter';
+      }
+      </style>
+    <title>MAPA LINEAS</title>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      $(document).ready(() => {
+        //Load the HTML contents of the header into <header>
+          $("footer").load("./footer.html");
+          $("header").load("./header.html");
+      });
+    </script>
+  </head>
+  <body>
+    <main class="main">
+      <header style="grid-row: 1; height: 50px"> </header>
+      <img src="./images/paginaMapa.png" alt="mapa" style="grid-row: 2; height: 135%; width: 100%;">
+      <div class="download" style="grid-row: 5; margin-left: 20px; margin-right: 20px;">
+          <a href="" style="color: black;"><h2>Descargar</h2></a>
+          <a href=""><img src="./images/pdf.PNG" alt="pdf" height="45px" width="45px"></a>
+          <a href=""><img src="./images/compartir.PNG" alt="share" height="45px" width="45px"></a>
+      </div>
+      <div style="grid-row: 6;" class="divButon">
+        <a href="./paginaLineas.html" class="buttonLinea">Lista</a>
+        <a href="./mapaLineas.html" class="buttonLinea" style="background-color: white;">Mapa</a>
+      </div>
+      <footer style="grid-row: 7; height: 50px"> </footer>
+    </main>
+  </body>
+</html>

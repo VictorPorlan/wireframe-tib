@@ -1,0 +1,51 @@
+body{
+    margin:0
+}
+.header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: white;
+    border-bottom: 1px gray solid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+
+.usuario {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+
+a {
+    text-decoration:none;
+    color: white;
+}
+
+.recuadroMenu {
+    border: 2px black solid;
+    height:100%
+}
+
+.divDesplegable {
+    background-color: black;
+    border: 2px black solid;
+    color: white;
+    border-radius: 10px;
+}
+
+.tpm {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 11px;
+    font-weight: bold;
+}

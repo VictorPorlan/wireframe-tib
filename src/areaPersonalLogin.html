@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Area Personal</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/areaPersonalLogin.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <style>
+      body {
+          font-family: 'Inter';
+      }
+      </style>
+    <script>
+      $(document).ready(() => {
+        //Load the HTML contents of the header into <header>
+        $("header").load("./header.html");
+        $("footer").load("./footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <main>
+      <header style="grid-row: 1; height: 50px"></header>
+      <div class="title">
+        Area Personal
+        <img src="./images/usuarioArea.png" class="logo" />
+      </div>
+      <div class="card" style="grid-row: 3">
+        <form class="form" action="/src/areaPersonal.html">
+          <input type="text" class="input" placeholder="Usuario" />
+          <input type="text" class="input" placeholder="Contraseña" />
+          <button class="login">Entrar</button>
+        </form>
+      </div>
+      <span class="links">
+        <p>¿Has olvidado tu contraseña?</p>
+        <p>Crear Usuario</p>
+      </span>
+      <footer style="grid-row: 5; height: 50px"></footer>
+    </main>
+  </body>
+</html>

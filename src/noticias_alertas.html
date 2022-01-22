@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/noticias_alertas.css"/>
+    <link rel="stylesheet" href="styles/main.css"/>
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <title>TIB</title>
+    <style>
+      body {
+          font-family: 'Inter';
+      }
+      </style>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      $(document).ready(() => {
+        //Load the HTML contents of the header into <header>
+          $("footer").load("./footer.html");
+          $("header").load("./header.html");
+      });
+    </script>
+  </head>
+  <body>
+    <main class="main">
+      <header style="grid-row: 1; height: 50px"> </header>
+        <div class="tablaNotAle">
+          <table>
+            <tr>
+                <th id="tablaNotAle1">Noticias<img src="./images/noticias.jpg" alt="noticias" style="width: 35px; height: 25px; margin-left: 10px;"></th>
+            </tr>
+            <tr>
+                <td>Primera noticia</td>
+            </tr>
+            <tr>
+                <td>Segunda noticia</td>
+            </tr>
+            <tr>
+                <td>Tercera noticia</td>
+            </tr>
+            <tr>
+                <td>Cuarta noticia</td>
+            </tr>
+          </table>
+          <table>
+            <tr>
+                <th id="tablaNotAle1">Alertas<img src="./images/alerta.png" alt="alertas" style="width: 20px; height: 20px; margin-left: 10px;"></th>
+            </tr>
+            <tr>
+                <td>Primera alerta</td>
+            </tr>
+            <tr>
+                <td>Segunda alerta</td>
+            </tr>
+            <tr>
+                <td>Tercera alerta</td>
+            </tr>
+            <tr>
+                <td>Cuarta alerta</td>
+            </tr>
+          </table>
+        </div>
+      <footer style="grid-row: 7; height: 50px"> </footer>
+    </main>
+  </body>
+</html>

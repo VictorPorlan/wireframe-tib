@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/lineas.css" />
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <style>
+      body {
+          font-family: 'Inter';
+      }
+      </style>
+    <title>LINEAS</title>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      $(document).ready(() => {
+        //Load the HTML contents of the header into <header>
+          $("footer").load("./footer.html");
+          $("header").load("./header.html");
+      });
+    </script>
+  </head>
+  <body>
+    <main class="main">
+        <header style="grid-row: 1; height: 50px"></header>
+        <h1 class="lineasHeader" style='grid-row: 2'>LINEAS</h1>
+      <div class="cardHorarios" style="grid-row: 3; height: 150px; margin-top: 20px;">
+        <span class="cardTextHorarios">TIB</span>
+      </div>
+      <a onClick="desplegarOtros()" class="card" style="grid-row: 4; height: 150px; margin-top: 20px;">
+                    
+        <span class="cardText" style="color: black;">OTROS</span>
+        <img src="./images/lineas.png" width="43px" height="43px" />
+      </a>
+      <div style="grid-row: 5; padding:0;" 
+            id="desplegableOtros"></div>
+      <footer style="grid-row: 7; height: 50px"> </footer>
+    </main>
+
+
+
+    <script>
+        function desplegarOtros() {
+          var desplegableLineas = document.getElementById("desplegableOtros");
+          desplegableLineas.innerHTML =
+            "<div class='divDesplegableOtros'>" +
+            "<p class='menuOtros'><a href='./paginaLineas.html'>TREN</a></p>" +
+            "<p class='menuOtros'><a href='http://www.emtpalma.cat/ca/inici'>EMT</a></p>" +
+            "<p class='menuOtros'><a href='./paginaLineas.html'>METRO</a></p>" +
+            "<p class='menuOtros'><a href='./paginaLineas.html'>TAXI</a></p>" +
+            "<p class='menuOtros'><a href='./paginaLineas.html'>AEROTIB</a></p>" +
+            "</div>";
+  
+          if (desplegableLineas.style.display === "none") {
+            desplegableLineas.style.display = "block";
+          } else {
+            desplegableLineas.style.display = "none";
+          }
+        }
+      </script>
+
+  </body>
+</html>
